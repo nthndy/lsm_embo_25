@@ -13,7 +13,7 @@ deskewed = np.zeros((C, Z, Y, X_expanded), dtype=data.dtype)
 
 # --- base offset ---
 x0 = max(0, total_shift_px)
-sign = -1.0  # flip to +1.0 if it skews the wrong way
+sign = +1.0  # flip to +1.0 if it skews the wrong way
 
 # --- deskew loop ---
 for c in range(C):
